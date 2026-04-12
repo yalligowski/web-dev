@@ -1,0 +1,153 @@
+body {
+  margin: 8px;
+  background-color: white;
+  color: white;
+  font-size: 20px;
+  
+  }
+
+h1 {
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+#nav-menu{
+  display: flex;
+  flex: 1 1 auto;
+  text-align: center;
+  justify-content:space-evenly;
+  position: sticky;
+  top: 0px;
+  background-color:rgba(32, 32, 82, .8) ;
+  padding: 0px;
+  color: white;
+}
+
+div.nav-div{
+  text-align: center;
+  flex-grow: 1;
+  position: relative;
+  margin-left: 0px;
+  width: 100%
+  
+}
+
+
+div.nav-div a{
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  margin-left: 0px;
+  width: 100%  
+  
+  
+}
+
+ul.nav-list{
+   /*display: block*/
+  display: none;
+  position: absolute;
+  background-color: ;
+  width:100%;
+}
+
+.nav-div:hover{
+  background-color: ;
+  font-weight: bolder;
+  display: block;
+  width: 100%;
+  margin-left: 0px 
+  }
+
+
+.nav-div:hover .nav-list{
+  display: block;
+  list-style-type:none;
+  background-color: rgba(32, 32, 82)
+ 
+}
+
+
+.nav-div .nav-list a:hover{
+  background-color:rgba(32, 32, 82) ;
+}
+
+#main-content{
+  margin: 0px 15%;
+  padding: 10px;
+  background-color: rgba(32, 32, 82, .5) ;
+  
+}
+
+#image{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  left: 0px;
+  top: 0px
+}
+
+#footer{
+  display:flex;
+  flex:1 1 auto;
+  margin: 0px;
+  width: 100%;
+  background-color:rgba(32, 32, 82) ;
+  color: white;
+  border:right;
+  border-color: solid;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+    }
+
+#address{
+  flex: auto;
+  margin-right:0px;
+  padding-left: 10px
+}
+
+#publish-info{
+  flex-grow:1;
+  text-align: right;
+  padding-right:10px;
+
+  }
+
+
+#preheader{
+  background-color:rgba(32, 32, 82)
+}
+
+.art-pic{
+  float:right;
+  padding:10px;
+  border: solid 1px;
+  margin: 15px
+}
+
+.heading{
+  text-align: center;
+  font-size: 200%
+}
+
+.art-pic2{
+    float:left;
+  padding:10px;
+  border: solid 1px;
+  margin: 15px
+}
+
+.art-pic3{
+  float:right;
+  padding:10px;
+  border: solid 1px;
+  margin: 15px
+}
