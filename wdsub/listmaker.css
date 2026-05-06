@@ -1,1 +1,42 @@
+#header{
+    text-align: center;
+  }
+
+
+#content{
+  background-color: rgba(60, 100, 250, 0.5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px;
+  font-size: 2rem;
+  width: 70%;
+  margin: auto;
+}
+   
+
+
+
+
+
+
+
+
+
+
+li button {
+  background-color: rgba(2,2,2,0);
+  border: none;
+}
+
+li{
+  list-style-type: none;
+}
+.trash-btn{
+  display: none;
+  
+}
+
+li:hover .trash-btn{
+  display: inline;
+}
 
