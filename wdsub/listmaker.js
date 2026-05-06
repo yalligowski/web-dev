@@ -10,12 +10,16 @@ const UNCHECK_BOX ="<button onclick='checkItem(this)'><svg viewBox='0 0 448 512'
 let itemInput = document.querySelector("#item-input");
 let list = document.getElementById("list");
 
+loadList();
 
+document.addEventListener("beforeunload" () => saveList());
 
 document.addEventListener("keydown", (key) => {
 if (key.code == "Enter") addItem(key);
  
 });
+
+//FUNCTION DEFINITIONS
 
 function addItem(event) {
  if (itemInput.value != "");
@@ -60,3 +64,19 @@ function uncheckItem(elem) {
   parentLi.innerHTML = UNCHECK_BOX + parentLi.innerText + TRASH_BUTTON;
 
 }
+
+function saveList() {
+  document.cookie = "list=" + list.innerHTML;
+}
+
+function loadList() {
+let oldList = document.cookie.sunstring(5);
+if (oldList != "")list.innerHTML = oldList;
+}
+
+
+
+
+
+
+
