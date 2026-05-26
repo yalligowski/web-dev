@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+   <title>NE Calculator</title>
+   <link rel="stylesheet" href="ne-calc-styles.css"></link>
+  </head>
+ <body>
+      <h1>Nash Equilibrium Calculator</h1> 
+       <p>This applet takes a two player game in normal form and computes pure-strategy Nash Equalibrium using Best Response [BR]</p>
+    <hr>
+     <p>To use the calculator, begin by entering the number of pure strategies  avaliable to player 1 and the number of pure strategies avaliable for player 2. Then press <i>Go.</i> On the next screen enter the payoff pairs for each outcome and press <i>Compute.</i> </p>
+      
+     <div id="input-grp">
+          <label> Number of pure strats for P1:</label>
+       <input id="p1-strats" type="number" value="1" min="1" max="8">
+       <br>
+       <br>
+       <label> Number of pure strats for P2:</label>
+       <input id="p1-strats" type="number" value="1" min="1" max="8">
+       <br>
+       <br>
+       <button onclick="goToMatrix()">Go</button>
+       
+       
+       <script>
+         function goToMatrix() {
+         let p1Strats = document.getElementById.("p1-strats").value;
+         let p2Strats = document.getElementById.("p2-strats").value;
+         navigation.navigate("matrix.html?p1Strats =" + p1Strats + "&p2Strats=" + p2Strats);
+       }
+       </script>
+      <body>
+</html>
+
+
+
+
